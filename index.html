@@ -11,19 +11,21 @@
 
 <body>
     <div class="container">
-        <div class="imagem">
-            <img src="logo.jpeg" alt="Logo da Base Social">
-        </div>
-        <div class="login">
+        <img src="assets/logo.jpeg" alt="Logo da Base Social">
+        <form class="login" action="index.html" name="form1" onsubmit="enviarFormulario()">
             <label for="email">E-mail:</label>
-                <input id="email" type="email">
+            <input id="email" type="email" name="email" required>
             <label for="password">Senha:</label>
-                <input id="password" type="password">
+            <input id="password" type="password" name="password" required>
             <label for="checkbox">
-                <input id="checkbox" type="checkbox" value="Continuar Logado"> Continuar logado? </label>
-            <input id="login" type="button" value="Login">
-        </div>
+                <input id="checkbox" type="checkbox" value="continuarLogado" name="continuarLogado"> Continuar logado?
+            </label>
+            <input id="login" type="submit" value="Login" name="enviar">
+        </form>
     </div>
+    </div>
+
+    <script src="log.js"></script>
 </body>
 
 </html>
