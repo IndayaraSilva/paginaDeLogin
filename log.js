@@ -1,5 +1,3 @@
-debugger;
-
 function enviarFormulario() {
     var login = "aluno@basesocial.com";
     var senha = "base2022";
